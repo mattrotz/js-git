@@ -1,0 +1,1 @@
+para usar express y renderizar paquetes sin la necesidad de usar babel,handelbars o otros se debera usar paquetes los axios,cors,nodemon, 
