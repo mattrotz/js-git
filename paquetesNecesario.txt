@@ -1,1 +1,2 @@
 para usar express y renderizar paquetes sin la necesidad de usar babel,handelbars o otros se debera usar  los paquetes axios,cors y nodemon 
+instalar mongodb,mongoose para conectar a una db de mongo
