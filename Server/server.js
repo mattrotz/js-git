@@ -1,13 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const BodyParser = require("body-parser")
 const app = express();
-const cors = require("cors");
-const corsOptions = {
-    origin: ["http://localhost:5173"],
-};
 
-app.use(BodyParser.json())
+const cors = require("cors");
+
+
+app.use(express.json())
+app.use(cors({ origin: "http://localhost:5173"}))
+
 
 
 const mongoURI='mongodb+srv://tomascastrillon8245:Tomi12182006@cluster0.kltpf.mongodb.net/'
