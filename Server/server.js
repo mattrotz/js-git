@@ -22,8 +22,15 @@ const userSchema = new Schema({ name: String, age: Number });
 
 const user = mongoose.model('user', userSchema)
 
+
+
 app.post('/user', async (req, res) => {
   const {name, age} = req.body;
+
+
+  if(!name || !age ){
+    return res.status(400).json({ error: 'Nombre y edad son requeridos'})
+  }
 
   const newUser = new user({ name, age });
 
